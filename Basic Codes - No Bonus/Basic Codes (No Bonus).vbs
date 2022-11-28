@@ -34,7 +34,8 @@ For i = 2 To lastrow
     'Set Close Price
     ClosePrice = Cells(i, 6).Value
         
-    'Check if the loop is still in the same ticket symbol
+    'Check if the loop is still in the same ticket symbol...
+    'If the loop is at the lastrow of a ticket symbol
     If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
     
         'Set the ticket symbol
